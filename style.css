@@ -109,35 +109,6 @@ footer {
 #calcur{text-align:center;
 	background-color:yellow;
 }
-footer{background-color:#ff9911;}
-
-@media screen and (min-width: 1024px) 
-{
-	body
-	{
-	margin: 0;
-	text-align:center;
-	}
-   #navbar 
-	{
-  margin:10px 0 0 0;
-  padding: 4px;
-  list-style-type: none;
-	display:flex;
-    flex-direction:row;
-	   text-align: center;
-	}
-	#navbar li{display: inline;}
-    table
-	{
-        font-size: 20px;
-    	}
-	#task 	{
-		display:flex;
-		flex-direction:column;
-		}
-#task tablu{order:1;}
-#task forma{order:2;}
 
 #gallery{
 	color:white;
@@ -214,4 +185,34 @@ footer{background-color:#ff9911;}
 .slider__item img{
 	max-width: 100%;
 }
+footer{background-color:#ff9911;}
+
+@media screen and (min-width: 1024px) 
+{
+	body
+	{
+	margin: 0;
+	text-align:center;
+	}
+   #navbar 
+	{
+  margin:10px 0 0 0;
+  padding: 4px;
+  list-style-type: none;
+	display:flex;
+    flex-direction:row;
+	   text-align: center;
+	}
+	#navbar li{display: inline;}
+    table
+	{
+        font-size: 20px;
+    	}
+	#task 	{
+		display:flex;
+		flex-direction:column;
+		}
+#task tablu{order:1;}
+#task forma{order:2;}
+	
 }
