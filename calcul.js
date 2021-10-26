@@ -44,13 +44,6 @@ function newprice()
 			}
 		}
 	});
-	let checkboxes = document.getElementsByName("afish");
-	checkboxes.forEach(function(checkbox){
-		if (checkbox.checked){
-			let afishCena =ceni.afish;
-			cena += afishCena;
-		}
-	});
 	let checkf =document.getElementById("checkbox");
 	console.log(s.value);
 	if (s.value == "2"){
@@ -59,10 +52,19 @@ function newprice()
 	}
 	else
 		checkf.style.display = "none";
+	let checkboxes = document.getElementsByName("afish");
+	checkboxes.forEach(function(checkbox){
+		if (checkbox.checked){
+			let afishCena =ceni.afish;
+			cena += afishCena;
+		}
+	});
 	let Cenabill = document.getElementById("out");
 	let k = document.getElementsByName("number1");
 	console.log(s.value);
 	if (s.value =="0"){
+		uberiradios();
+		ubericheckbox();
 		console.log(s.value);
 		cena=ceni.Grupp[0];
 		k[0] = Number.parseInt(k[0]);
