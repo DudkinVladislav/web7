@@ -15,7 +15,7 @@ function uberiradios()
 function ubericheckbox()
 {
 	let checkboxes = document.getElementsByName("afish");
-	for(var i=0;var<1;i++)
+	for(var i=0; i<1;i++)
 		checkboxes[i].checked=false;	
 }
 function newprice()
@@ -53,7 +53,7 @@ function newprice()
 	let checkf =document.getElementById("checkbox");
 	console.log(s.value);
 	if (s.value == "2"){
-		
+		uberiradios();
 		checkf.style.display = "block";
 	}
 	else
