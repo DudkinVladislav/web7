@@ -17,7 +17,9 @@ function ubericheckbox()
 {
 	let checkboxes = document.getElementsByName("afish");
 	for(var i=0; i<1;i++)
-		checkboxes[i].checked=false;	
+	{
+		checkboxes[i].checked=false;
+	}
 }
 function newprice()
 {
@@ -32,10 +34,7 @@ function newprice()
 	if(s.value == "1"){
 		ubericheckbox();
 		radiot.style.display ="block";
-	}
-	else
-		radiot.style.display = "none";
-	let radios = document.getElementsByName("myradio");
+		let radios = document.getElementsByName("myradio");
 	radios.forEach(function(radio){
 		if (radio.checked){
 			let radioCena = ceni.mesta[radio.value];
@@ -44,6 +43,10 @@ function newprice()
 			}
 		}
 	});
+	}
+	else
+		radiot.style.display = "none";
+	
 	let checkf =document.getElementById("checkbox");
 	console.log(s.value);
 	if (s.value == "2"){
