@@ -6,30 +6,22 @@ $(document).ready(function(){
 		speed: 300,
 		slidesToShow: 4,
 		slidesToScroll: 4,
-		responsive: [
-		  {
-			breakpoint: 1024,
-			settings: {
+		adaptive: {
+		  1024:{
 			  slidesToShow: 4,
 			  slidesToScroll: 4,
 			  infinite: true,
 			  dots: true
-			}
 		  },
-		  {
-			breakpoint: 600,
-			settings: {
+		  600:{
 			  slidesToShow: 2,
 			  slidesToScroll: 2
-			}
+			
 		  },
-		  {
-			breakpoint: 480,
-			settings: {
+		 480: {
 			  slidesToShow: 2,
 			  slidesToScroll: 2
 			}
 		  }
-		]
 	  });
 });
