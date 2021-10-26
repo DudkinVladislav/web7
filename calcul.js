@@ -49,16 +49,17 @@ function newprice()
 	if (s.value == "2"){
 		uberiradios();
 		checkf.style.display = "block";
-	}
-	else
-		checkf.style.display = "none";
-	let checkboxes = document.getElementsByName("afish");
+		let checkboxes = document.getElementsByName("afish");
 	checkboxes.forEach(function(checkbox){
 		if (checkbox.checked){
 			let afishCena =ceni.afish;
 			cena += afishCena;
 		}
 	});
+	}
+	else
+		checkf.style.display = "none";
+	
 	let Cenabill = document.getElementById("out");
 	let k = document.getElementsByName("number1");
 	console.log(s.value);
