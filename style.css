@@ -198,7 +198,9 @@ footer{background-color:#ff9911;}
 	background-color: #fff;
 	border-radius: 50%;
 }
-
+#mogila {
+	background-color:#343a40;
+	}
 .slider .slick-dots li.slick-active button{
 	background-color: transparent;
 	border: 1px solid #fff;
