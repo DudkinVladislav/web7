@@ -138,9 +138,7 @@ footer{background-color:#ff9911;}
 		}
 #task tablu{order:1;}
 #task forma{order:2;}
-#gallery{
-	color:white;
-}
+
 
 .slick-slider{
 	min-width: 0;
@@ -174,11 +172,11 @@ footer{background-color:#ff9911;}
 }
 .slider .slick-arrow.slick-prev{
 	left: 0;
-	background: url("img/sl-arrow_l.svg") 0 0 / 100% no-repeat;
+	background: url("cross-left.jpg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next{
 	right: 0;
-	background: url("img/sl-arrow_r.svg") 0 0 / 100% no-repeat;
+	background: url("cross-right.jpg") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-disabled{
 	opacity: 0.2;
