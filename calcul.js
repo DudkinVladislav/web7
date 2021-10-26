@@ -8,6 +8,7 @@ function getCen(){
 function uberiradios()
 {
 	let radios = document.getElementsByName("myradio");
+	console.log("R");
 	for(var i=0; i<3;i++)
 		radios[i].checked=false;
 	
