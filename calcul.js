@@ -8,8 +8,8 @@ function getCen(){
 function uberiradios()
 {
 	let radios = document.getElementsByName("myradio");
-	radios.forEach(function(radio){
-		radio.checked=false;});
+	for(var i=0; i<3;i++)
+		radios[i].checked=false;
 	
 }
 function ubericheckbox()
