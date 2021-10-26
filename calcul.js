@@ -5,7 +5,19 @@ function getCen(){
 		afish:500
 	};
 }
-		
+function uberiradios()
+{
+	let radios = document.getElementsByName("myradio");
+	radios.forEach(function(radio){
+		radio.checked=false;});
+	
+}
+function ubericheckbox()
+{
+	let checkboxes = document.getElementsByName("afish");
+	for(var i=0;var<1;i++)
+		checkboxes[i].checked=false;	
+}
 function newprice()
 {
 	let s=document.getElementById("myselect");
@@ -17,6 +29,7 @@ function newprice()
 	let radiot=document.getElementById("radios");
 	console.log(s.value);
 	if(s.value == "1"){
+		ubericheckbox();
 		radiot.style.display ="block";
 	}
 	else
@@ -40,6 +53,7 @@ function newprice()
 	let checkf =document.getElementById("checkbox");
 	console.log(s.value);
 	if (s.value == "2"){
+		
 		checkf.style.display = "block";
 	}
 	else
@@ -63,6 +77,7 @@ function newprice()
 	}
 	else
 	{
+		
 		k[0] = Number.parseInt(k[0].value);
 		var res=cena*k[0].value;
 		Cenabill.innerHTML = Math.abs(res);
